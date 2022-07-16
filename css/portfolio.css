@@ -6,13 +6,6 @@
   --btn-team-bg-color: #f5f4fa;
 }
 
-.subtitle {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -41,6 +34,9 @@ ul {
 
 img {
   display: block;
+  min-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 body {
@@ -303,6 +299,16 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
 
 .btn {
   font-family: inherit;
@@ -350,20 +356,6 @@ body {
   margin-top: 20px;
   margin-right: 12px;
   color: #ffffff;
-}
-.form__input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.form__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }
 .form__input::placeholder {
   font-weight: 400;
