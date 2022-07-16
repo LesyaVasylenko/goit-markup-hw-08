@@ -1,0 +1,137 @@
+.header {
+  padding: 24px 0 25px 0;
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  font-family: "Raleway";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  align-items: center;
+  margin-right: 93px;
+}
+
+.logo__pre-title {
+  color: var(--btn-link-hover-color);
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+
+  @include transitions(color);
+  &:hover,
+  &:focus {
+    color: var(--btn-link-hover-color);
+  }
+  &::after {
+    content: "";
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    margin-top: 28px;
+    opacity: 0;
+    @include transitions(opacity);
+  }
+  &:hover:after,
+  &:focus:after {
+    opacity: 1;
+  }
+}
+
+.studio,
+.studio::after,
+.portfolio-activ,
+.portfolio-activ::after {
+  color: var(--btn-link-hover-color);
+  opacity: 1;
+}
+
+.connect {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--mine-text-color);
+
+  @include transitions(color);
+}
+
+.connect__mail {
+  margin-right: 30px;
+  &:hover,
+  &:focus {
+    color: var(--btn-link-hover-color);
+  }
+}
+
+.connect__tel {
+  margin-left: auto;
+  &:hover,
+  &:focus {
+    color: var(--btn-link-hover-color);
+  }
+}
+
+.connect__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.header-logo-pf {
+  margin-right: 95px;
+}
+
+.header-logo-pf {
+  font-family: "Raleway";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo__pre-logo-pf {
+  color: var(--btn-link-hover-color);
+}
+
+.after-title--color-dark {
+  color: #000000;
+}

@@ -1,4 +1,5 @@
 @import "./utils/vars";
+@import "./utils/mixins";
 
 @import "./base/reset";
 @import "./base/common";
@@ -7,9 +8,17 @@
 
 @import "./components/container";
 @import "./components/btn";
-@import "./components/pre-title";
+@import "./components/container-btn";
 @import "./components/title";
 @import "./components/title-btn";
 @import "./components/title-text";
 
 @import "./layout/header";
+@import "./layout/feature";
+@import "./layout/client";
+@import "./layout/occupation";
+@import "./layout/team";
+@import "./layout/subtitle";
+@import "./layout/form";
+@import "./layout/modal";
+@import "./layout/footer";

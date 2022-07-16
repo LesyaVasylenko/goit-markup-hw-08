@@ -1,0 +1,35 @@
+.occupation {
+  padding: 0 0 94px 0;
+  margin: 0 auto;
+}
+
+.occupation-list {
+  display: flex;
+  margin: -15px;
+}
+.occupation-list__item {
+  margin: 15px;
+  position: relative;
+  width: 370px;
+}
+
+.occupation-list__thumb {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.occupation-list__text {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
