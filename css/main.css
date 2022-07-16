@@ -65,12 +65,13 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   margin: -1px;
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
@@ -289,11 +290,6 @@ body {
   margin: 0 auto;
 }
 
-.feature__list {
-  display: flex;
-  margin: -15px;
-}
-
 .feature__icon {
   display: flex;
   text-align: center;
@@ -308,11 +304,6 @@ body {
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.feature__item {
-  width: calc(25% - 30px);
-  margin: 15px;
 }
 
 .feature__title {
@@ -526,6 +517,20 @@ body {
   margin-top: 20px;
   margin-right: 12px;
   color: #ffffff;
+}
+.form__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .form__input::placeholder {
   font-weight: 400;

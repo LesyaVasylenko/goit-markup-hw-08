@@ -298,7 +298,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
@@ -350,6 +350,20 @@ body {
   margin-top: 20px;
   margin-right: 12px;
   color: #ffffff;
+}
+.form__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 .form__input::placeholder {
   font-weight: 400;
