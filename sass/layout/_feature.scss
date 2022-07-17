@@ -1,11 +1,10 @@
 .feature {
-  padding: 94px 0;
   margin: 0 auto;
-  @media screen and (min-width: 480px) {
+  @include mobile {
     padding: 60px 0;
   }
-  @media screen and(min-width: 768px) {
-    padding: 60px 0;
+  @include desctop {
+    padding: 94px 0;
   }
 }
 
@@ -31,9 +30,12 @@
 }
 
 .feature__item {
-  margin-top: 30px;
-  @media screen and(min-width: 768px) {
+  width: 100%;
+  @include tablet {
     width: calc((100% - 30px) / 2);
+  }
+  @include desctop {
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -41,9 +43,12 @@
   width: 100%;
   margin-bottom: 10px;
   text-align: center;
+  margin-top: 30px;
   @include font(700, 14px, 1.14, 00.03em);
   text-transform: uppercase;
-
+  @include tablet {
+    text-align: left;
+  }
   .feature__title + .feature__title {
     width: 270px;
   }

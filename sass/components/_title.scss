@@ -7,7 +7,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
-  padding: 200px 0;
+  // max-width: 1600px;
   margin: 0 auto;
+
+  @include mobile {
+    padding: 118px 0;
+    max-width: 480px;
+  }
+  @include tablet {
+    padding: 118px 0;
+    max-width: 768px;
+  }
+  @include desctop {
+    padding: 200px 0;
+    max-width: 1600px;
+  }
 }

@@ -1,12 +1,18 @@
 .title__text {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text-teambox-btnhover-color);
-  width: 695px;
+
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @include mobile {
+    @include font(null, 26px, 1.62, 0.06em);
+    width: 360px;
+  }
+
+  @include desctop {
+    @include font(900, 44px, 1.36, 0.06em);
+    width: 695px;
+  }
 }
