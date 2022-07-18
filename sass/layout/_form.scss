@@ -1,21 +1,30 @@
 .form {
-  margin-left: auto;
-  width: 450px;
+  //
+  // width: 450px;
+  justify-content: center;
+  @include tablet {
+    width: 450px;
+    margin-left: 166px;
+  }
+  @include desctop {
+    width: 570px;
+  }
 }
 
 .form__title {
-  // position: relative;
   width: 100%;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
+  justify-content: center;
+  @include desctop {
+    position: relative;
+  }
 }
 
 .form__input {
-  // position: relative;
-  // width: 358px;
   width: 100%;
-  height: 50px;
+
   padding-left: 16px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -30,6 +39,15 @@
   &::placeholder {
     @include font(400, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
+  }
+  @include tablet {
+    width: 450px;
+  }
+  @include desctop {
+    position: relative;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
   }
 }
 

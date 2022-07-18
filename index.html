@@ -23,7 +23,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a class="logo" href=""
           ><span class="logo__pre-title">Web</span
@@ -60,8 +60,64 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn">
+          <svg class="form__menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div class="container">
+        <button type="button" class="close-open-btn">
+          <svg class="close-open-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__list" style="list-style-type: none">
+          <li class="mob-menu__item studio">
+            <a class="mob-menu__link studio" href="index.html">Студия</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="portfolio.html">Портфолио</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mob-connect" style="list-style-type: none">
+          
+          <li class="mob-connect__list">
+            <a class="mob-connect__tel contacts" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li><li class="mob-connect__list">
+            <a
+              class="mob-connect__mail contacts"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-soc__list list" style="list-style-type: none">
+          <li class="mob-soc__item">
+            <a href="" class="mob-soc__link link">
+              Instagram</a>
+          </li>
+          <li class="mob-soc__item">
+            <a href="" class="mob-soc__link link"
+              >Twitter</a>
+          </li>
+          <li class="mob-soc__item">
+            <a href="" class="mob-soc__link link"
+              >Facebook</a>
+          </li>
+          <li class="mob-soc__item">
+            <a href="" class="mob-soc__link link"
+              >LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="title">
         <div class="container">
@@ -393,7 +449,7 @@
       <section class="footer">
         <div class="container">
           <div class="conacts-soc">
-            <div>
+            <div class="contacts-container">
               <a class="logo" href=""
                 ><span class="logo__pre-title">Web</span
                 ><span class="logo__after-title after-title--color-light"

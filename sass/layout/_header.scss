@@ -1,7 +1,8 @@
 .header {
+  position: absolute;
   padding: 24px 0 25px 0;
   border-bottom: 1px solid #ececec;
-  .container {
+  > .container {
     display: flex;
     align-items: center;
   }
@@ -23,7 +24,18 @@
 }
 
 .menu {
-  display: flex;
+  display: none;
+  // display: flex;
+}
+
+.form__menu {
+  display: block;
+  background-color: inherit;
+}
+
+.menu-open-btn {
+  display: block;
+  margin-left: auto;
 }
 
 .menu__item {
@@ -74,8 +86,9 @@
 }
 
 .connect {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // margin-left: auto;
 }
 
 .contacts {
@@ -135,3 +148,145 @@
 .after-title--color-dark {
   color: #000000;
 }
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  text-decoration: none;
+  @include font(500, 49px, 1.18, 0.02em);
+  text-align: center;
+  color: #212121;
+}
+
+.mob-menu__item:hover,
+.mob-menu__item:focus {
+  color: var(--btn-link-hover-color);
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  @include transitions(fill);
+}
+
+.close-open-btn {
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: none;
+}
+
+.close-open-icon {
+  @include transitions(transition fill);
+  // &:focus,
+  &:hover {
+    fill: #2196f3;
+  }
+}
+// .close-open-icon {
+//   @include transitions(fill);
+//   &:focus,
+//   &:hover {
+//     fill: #2196f3;
+//   }
+// }
+
+// }
+// .studio {
+// }
+// .menu {
+// }
+// .mob-connect {
+//   // .mob-connect__list
+
+//   &__list {
+//   }
+
+//   // .mob-connect__mail
+
+//   &__mail {
+//   }
+// }
+// .contacts {
+// }
+// .connect-mob {
+//   // .connect-mob__icon
+
+//   &__icon {
+//   }
+// }
+// .mob-connect {
+//   // .mob-connect__list
+
+//   &__list {
+//   }
+
+.mob-connect__tel {
+  margin-top: 302px;
+  margin-bottom: 32px;
+  @include font(500, 34px, 1.18, 0.02em);
+  color: #2196f3;
+}
+
+.mob-connect__mail {
+  margin-bottom: 64px;
+  @include font(500, 24px, 1.17, 0.02em);
+  color: #757575;
+}
+
+//   // .mob-connect__icon
+
+//   &__icon {
+//   }
+// }
+// .mob-soc {
+.mob-soc__list {
+  display: flex;
+}
+
+.mob-soc__link {
+  @include font(500, 18px, 1.22, 0.02em);
+  color: #2196f3;
+  text-decoration: none;
+}
+
+//   &__list {
+//   }
+
+//   // .mob-soc__item
+
+//   &__item {
+//   }
+
+//   // .mob-soc__link
+
+//   &__link {
+//   }
+
+//   // .mob-soc__icon
+
+//   &__icon {
+//   }
+// }
+// .list {
+// }
+// .link {
+// }
