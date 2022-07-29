@@ -40,7 +40,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 16px 0;
@@ -53,9 +52,6 @@
     border-radius: 4px;
     color: #2196f3;
   }
-  // @include tablet {
-  //   width: 226px;
-  // }
 }
 
 .client__icon {

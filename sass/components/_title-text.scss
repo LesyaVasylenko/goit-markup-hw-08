@@ -4,12 +4,16 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--text-teambox-btnhover-color);
-
   margin: 0 auto;
   margin-bottom: 30px;
 
   @include desctop {
     @include font(900, 44px, 1.36, 0.06em);
-    width: 695px;
+    max-width: 695px;
+    text-transform: uppercase;
+    color: var(--text-teambox-btnhover-color);
+    margin: 0 auto;
+    margin-bottom: 30px;
+
   }
 }

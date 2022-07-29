@@ -66,6 +66,11 @@ body {
     border-bottom: 1px solid #ececec;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header-container {
+    padding: 24px 0 25px 0;
+  }
+}
 
 .logo {
   font-family: "Raleway";
@@ -75,6 +80,11 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__pre-title {
@@ -89,7 +99,7 @@ body {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .menu {
     display: flex;
   }
@@ -114,6 +124,12 @@ body {
 .menu__item {
   position: relative;
 }
+@media screen and (min-width: 1200px) {
+  .menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .menu__link {
   display: none;
 }
@@ -147,7 +163,7 @@ body {
     height: 4px;
     background-color: #2196f3;
     border-radius: 2px;
-    margin-top: 44px;
+    margin-top: 45px;
     opacity: 0;
     transition-property: opacity;
     transition-duration: 250ms;
@@ -178,10 +194,21 @@ body {
     margin-left: 90px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+    margin-left: auto;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .connect__mail {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect__mail {
+    margin-bottom: 0;
   }
 }
 
@@ -203,7 +230,7 @@ body {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contacts {
     font-weight: 500;
     font-size: 14px;
@@ -383,8 +410,13 @@ body {
 }
 
 .portfolio {
-  padding: 94px 0;
+  padding: 60px 0;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
 }
 
 .filters-list {
@@ -441,18 +473,23 @@ body {
     width: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .project-item {
+    width: 370px;
+  }
+}
 .project-item:last-child {
   margin-bottom: 0%;
 }
 .project-item:hover, .project-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .project-item:nth-child(3n) {
     margin-right: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .project-item:nth-last-child(-n+3) {
     margin-bottom: 0;
   }
@@ -505,17 +542,13 @@ body {
 }
 
 .form {
-  justify-content: center;
+  margin: 0 auto;
+  width: 450px;
 }
-@media screen and (min-width: 768px) {
-  .form {
-    width: 450px;
-    margin-left: 166px;
-  }
-}
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form {
     width: 570px;
+    margin-left: 90px;
   }
 }
 
@@ -529,7 +562,7 @@ body {
   color: #ffffff;
   justify-content: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form__title {
     position: relative;
   }
@@ -537,14 +570,12 @@ body {
 
 .form__input {
   width: 100%;
+  margin: 20px 0;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 12px;
   color: #ffffff;
 }
 .form__input::placeholder {
@@ -559,12 +590,15 @@ body {
     width: 450px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form__input {
     position: relative;
-    width: 358px;
+    width: 354px;
     height: 50px;
     padding-left: 16px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-right: 12px;
   }
 }
 
@@ -657,7 +691,7 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(0, 0) scale(0.5);
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
@@ -758,7 +792,7 @@ body {
   height: 15px;
   border: 1px solid #212121;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal-check__text::before {
     font-weight: 400;
     font-size: 14px;
@@ -820,8 +854,23 @@ body {
   text-align: center;
   justify-content: center;
 }
-.footer .contacts-container {
-  margin-left: 76px;
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .contacts-container {
+    margin-left: 76px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .contacts-container {
+    margin-left: 0;
+    width: 231px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer .conacts-soc {
@@ -830,7 +879,13 @@ body {
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer .conacts-soc {
+    justify-content: flex-start;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
   .footer {
     display: flex;
     padding-left: 16px;
@@ -850,7 +905,7 @@ body {
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-weight: 700;
     font-size: 26px;
@@ -876,15 +931,21 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
 
 .address__item:first-child {
   padding-top: 20px;
+  white-space: nowrap;
 }
 
 .address__item:not(:last-child) {
   padding-bottom: 8px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .address__item:not(:last-child) {
     padding-bottom: 9px;
   }
@@ -894,7 +955,7 @@ body {
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 14x;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -910,9 +971,10 @@ body {
     margin-right: 89px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer-soc {
-    margin-left: auto;
+    margin: 0;
+    margin-left: 70px;
     max-width: 206px;
   }
 }
@@ -970,17 +1032,17 @@ body {
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 479px;
+    max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1199px;
+    max-width: 1200px;
   }
 }
 

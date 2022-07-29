@@ -1,7 +1,10 @@
 .occupation {
   display: none;
+
+  @include desctop {
+    display: block;
   padding: 0 0 94px 0;
-  margin: 0 auto;
+  margin: 0 auto;}
 }
 
 .occupation-list {

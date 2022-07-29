@@ -5,12 +5,12 @@
   padding-left: 15px;
 
   @include mobile {
-    max-width: 479px;
+    max-width: 480px;
   }
   @include tablet {
-    max-width: 767px;
+    max-width: 768px;
   }
   @include desctop {
-    max-width: 1199px;
+    max-width: 1200px;
   }
 }
