@@ -1,8 +1,12 @@
 .feature {
   margin: 0 auto;
   @include mobile {
+    //   max-width: 450px;
     padding: 60px 0;
   }
+  @include tablet {
+  }
+
   @include desctop {
     padding: 94px 0;
   }

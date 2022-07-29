@@ -1,8 +1,7 @@
 .client {
   margin: 0 auto;
-  @include mobile {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
+
   @include desctop {
     padding: 94px 0;
   }
@@ -15,21 +14,19 @@
 }
 
 .client__title {
-  font-size: 36px;
-  line-height: 42px;
+  @include font(700, 28px, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 30px;
   @include desctop {
+    @include font(700, 36px, 1.17, 0.03em);
     margin-bottom: 50px;
   }
 }
 
 .client__item {
-  @include mobile {
-    width: calc((100% - 30px) / 2);
-  }
+  width: calc((100% - 30px) / 2);
+
   @include tablet {
     width: calc((100% - 60px) / 3);
   }

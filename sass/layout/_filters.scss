@@ -1,7 +1,14 @@
 .filters-list {
   display: flex;
+  width: 100%;
   margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .filters-btn {
@@ -12,7 +19,6 @@
 
 .filters-item {
   border: none;
-  margin-right: 8px;
 }
 
 .filters-item:last-child {
