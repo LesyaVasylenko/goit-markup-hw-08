@@ -558,9 +558,6 @@ body {
   transform: rotate(90deg);
 }
 
-.feature {
-  margin: 0 auto;
-}
 @media screen and (min-width: 480px) {
   .feature {
     padding: 60px 0;
@@ -866,11 +863,11 @@ body {
 
 .form {
   margin: 0 auto;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .form {
-    width: 570px;
+    max-width: 570px;
     margin-left: 90px;
   }
 }

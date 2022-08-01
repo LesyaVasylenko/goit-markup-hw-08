@@ -1,15 +1,15 @@
 .feature {
-  margin: 0 auto;
-  @include mobile {
-    padding: 60px 0;
-  }
+  padding: 60px 0;
+  // @include mobile {
+  //   padding: 60px 0;
+  // }
   @include tablet {
   }
+}
 
   @include desctop {
     padding: 94px 0;
   }
-}
 
 .feature__list {
   display: flex;

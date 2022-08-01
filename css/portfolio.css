@@ -543,11 +543,11 @@ body {
 
 .form {
   margin: 0 auto;
-  width: 450px;
+  max-width: 450px;
 }
 @media screen and (min-width: 1200px) {
   .form {
-    width: 570px;
+    max-width: 570px;
     margin-left: 90px;
   }
 }
@@ -1029,11 +1029,6 @@ body {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container {

@@ -1,9 +1,9 @@
 .form {
   margin: 0 auto;
-  width: 450px;
+  max-width: 450px;
 
   @include desctop {
-    width: 570px;
+    max-width: 570px;
     margin-left: 90px;
   }
 }
