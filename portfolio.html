@@ -154,11 +154,28 @@
           <ul class="project-list">
             <li class="project-item">
               <div class="project-overlay">
+                <picture>
+                  <source  srcset="
+                  ./images/portfolio/desktop/portfolio1.jpg 1x,
+                  ./images/portfolio/desktop/portfolio1-2x.jpg 2x"
+                  media="(min-width: 1200px)"/>
+
+                  <source  srcset="
+                  ./images/portfolio/tablet/portfolio1-tab.jpg 1x,
+                  ./images/portfolio/tablet/portfolio1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"/>
+
+                  <source  srcset="
+                  ./images/portfolio/mobile/portfolio1-mob.jpg 1x,
+                  ./images/portfolio/mobile/portfolio1-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"/>
                 <img
-                  src="./images/portfolio1.jpeg"
+                  src="./images/portfolio/desktop/portfolio1.jpg"
                   alt="веб-сайт"
                   width="370"
                 />
+                </picture>
+                
                 <p class="project-text-ovarlay">
                   Ресурс предлагает комплексные предложения с разным уровнем
                   функционала и сервисов. Все это позволит посетителю получить
