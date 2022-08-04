@@ -292,7 +292,6 @@ body {
 .mob-menu .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
   justify-content: space-between;
   overflow: auto;
   padding: 0;
@@ -312,6 +311,10 @@ body {
   .header__mob-menu {
     display: none;
   }
+}
+
+.mob-menu__top {
+  margin-bottom: 302px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -365,6 +368,10 @@ body {
   fill: #2196f3;
 }
 
+.mob-connect__list:first-child {
+  margin-bottom: 32px;
+}
+
 .mob-connect__tel {
   margin-top: 100px;
   margin-bottom: 32px;
@@ -386,6 +393,7 @@ body {
 
 .mob-soc__list {
   display: flex;
+  margin-top: 64px;
 }
 
 .mob-soc__link {
@@ -1030,6 +1038,11 @@ body {
   padding-right: 15px;
   padding-left: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -1039,6 +1052,11 @@ body {
   .container {
     max-width: 1200px;
   }
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
 }
 
 .btn {

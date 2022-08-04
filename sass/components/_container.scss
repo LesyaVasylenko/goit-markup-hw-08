@@ -4,9 +4,9 @@
   padding-right: 15px;
   padding-left: 15px;
 
-  // @include mobile {
-  //   max-width: 480px;
-  // }
+  @include mobile {
+    max-width: 480px;
+  }
   @include tablet {
     max-width: 768px;
   }
