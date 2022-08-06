@@ -118,11 +118,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpeg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mob.jpeg);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .title {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-2x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-mob-2x.jpeg);
   }
 }
 @media screen and (min-width: 768px) {
@@ -130,17 +130,17 @@ body {
     max-width: 768px;
     margin: 0 auto;
     padding: 118px 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tabl.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tabl.jpeg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .title {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tabl-2x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tabl-2x.jpeg);
   }
 }
 @media screen and (min-width: 1200px) {
   .title {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg.jpeg);
     max-width: 1600px;
     padding: 200px 0;
     margin: 0 auto;
@@ -148,7 +148,7 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .title {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-2x.jpeg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-2x.jpeg);
   }
 }
 
@@ -212,13 +212,16 @@ body {
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #ececec;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-container {
     padding: 24px 0 25px 0;
   }
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -251,13 +254,13 @@ body {
 @media screen and (min-width: 1200px) {
   .menu {
     display: flex;
+    margin-left: 0;
   }
 }
 
 .form__menu {
   display: block;
   background-color: white;
-  border-radius: none;
 }
 
 .form__input {
@@ -268,6 +271,7 @@ body {
   display: block;
   padding: 0;
   margin-top: -6px;
+  border: none;
 }
 
 .menu__item {
@@ -444,6 +448,7 @@ body {
   justify-content: space-between;
   overflow: auto;
   padding: 0;
+  height: 100%;
 }
 
 .header__mob-menu {
@@ -454,7 +459,6 @@ body {
   justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) {
   .header__mob-menu {
@@ -463,7 +467,7 @@ body {
 }
 
 .mob-menu__top {
-  margin-bottom: 302px;
+  margin-bottom: 100px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -538,6 +542,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  text-decoration: none;
 }
 
 .mob-soc__list {
@@ -780,7 +785,6 @@ body {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
@@ -859,6 +863,11 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) {
+  .subtitle {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subtitle {

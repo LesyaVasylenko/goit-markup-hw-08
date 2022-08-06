@@ -7,12 +7,15 @@
 
     align-items: center;
     padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ececec;
-  }
+    padding-bottom: 10px;}
   @include desctop {
     padding: 24px 0 25px 0;
   }
+}
+  
+
+.header {
+border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -39,13 +42,14 @@
   }
   @include desctop {
     display: flex;
+    margin-left: 0;
   }
 }
 
 .form__menu {
   display: block;
   background-color: white;
-  border-radius: none;
+  
 }
 
 .form__input {
@@ -56,6 +60,7 @@
   display: block;
   padding: 0;
   margin-top: -6px;
+border: none;
 }
 
 .menu__item {
@@ -210,6 +215,7 @@
     justify-content: space-between;
     overflow: auto;
     padding: 0;
+    height: 100%;
   }
 }
 
@@ -221,14 +227,13 @@
   justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #ececec;
   @include tablet {
     display: none;
   }
 }
 
 .mob-menu__top {
-  margin-bottom: 302px;
+  margin-bottom: 100px;
 }
 
 .mob-menu__item:not(:last-child) {
@@ -291,6 +296,7 @@
   margin-bottom: 64px;
   @include font(500, 24px, 1.17, 0.02em);
   color: #757575;
+  text-decoration: none;
 }
 
 .mob-soc__list {
